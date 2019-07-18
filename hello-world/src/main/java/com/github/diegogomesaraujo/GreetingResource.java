@@ -10,19 +10,18 @@ import javax.ws.rs.core.MediaType;
 import com.github.diegogomesaraujo.services.GreetingService;
 
 @Path("/hello")
+@Produces(MediaType.TEXT_PLAIN)
 public class GreetingResource {
 
     @Inject
     private GreetingService greetingResource;
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
         return "hello";
     }
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
     @Path("/greeting/{name}")
     public String greeting(@PathParam("name") String name) {
         return greetingResource.greeting(name);
