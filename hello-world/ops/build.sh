@@ -1,5 +1,8 @@
 #!/bin/bash
 
+pwd
+ls -lha
+
 mvn clean package
 
 
