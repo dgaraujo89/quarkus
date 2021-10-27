@@ -1,3 +1,3 @@
 #!/bin/bash
 
-env
+env | grep GO_
