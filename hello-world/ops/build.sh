@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd hello-world
+
 pwd
 ls -lha
 
